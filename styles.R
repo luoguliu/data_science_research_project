@@ -71,5 +71,40 @@ write.csv(book_chapters_clean4, "murder_styles.csv")
 
 
 
+tmp <- data.frame(text  = c("a"))
+
+i <- 1
+while (i <= nrow(book_text_only)) {
+  while (i <= nrow(book_text_only) && book_text_only[i,1] == "") {
+    i <- i + 1
+  }
+  text <- ""
+  j <- i
+  while (j <= nrow(book_text_only) && book_text_only[j,1] != "") {
+    text <- paste(text, book_text_only[j,1])
+    j <- j + 1
+  }
+  i <- j
+  if (nchar(text) > 0) {
+    tmp <- add_row(tmp, text = text)
+  }
+}
+
+tmp <- tmp %>% tail(nrow(tmp) - 1)
+
+write.table(tmp, 
+            file = "styles_paragraphs.txt", 
+            sep = ",", 
+            col.names = FALSE, 
+            row.names = FALSE) 
+
+
+
+
+
+
+
+
+
 
 
