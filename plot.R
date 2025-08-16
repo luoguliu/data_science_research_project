@@ -12,7 +12,7 @@ absa_neg %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "ABSA negative score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "ABSA Negative Score", y = "Negative Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -22,7 +22,7 @@ absa_neu %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "ABSA neutral score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "ABSA Neutral Score", y = "Neutral Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -32,7 +32,7 @@ absa_pos %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "ABSA positive score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "ABSA Positive Score", y = "Positive Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -50,7 +50,7 @@ sa_neg %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "CSA negative score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "CSA Negative Score", y = "Negative Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -60,7 +60,7 @@ sa_neu %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "CSA neutral score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "CSA Neutral Score", y = "Neutral Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -70,7 +70,7 @@ sa_pos %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "CSA positive score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "CSA Positive Score", y = "Positive Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -82,7 +82,7 @@ cnt %>% tail(13) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "frequency of each charater") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "Frequency of each Charater", y = "Count", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -102,7 +102,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of Alfred", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of Alfred", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 absa_pos %>% 
@@ -112,7 +112,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of Howard", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of Howard", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 absa_pos %>% 
@@ -122,7 +122,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of Lawrence", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of Lawrence", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 
@@ -133,7 +133,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of Mary", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of Mary", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 absa_pos %>% 
@@ -143,7 +143,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of John", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of John", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 absa_pos %>% 
@@ -153,7 +153,7 @@ absa_pos %>%
   geom_line(linewidth = 1.5) + 
   geom_smooth() + 
   theme_bw(base_size = 20) + 
-  labs(title = "ABSA positive score of Cynthia", y = "Positive Score") + 
+  labs(title = "ABSA Positive Score of Cynthia", y = "Positive Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 
 
@@ -192,13 +192,13 @@ pair %>% tail(13) %>%
   ggplot(aes(x = Chapter, y = Count)) + 
   geom_line(linewidth = 1.5) + 
   theme_bw(base_size = 24) + 
-  labs(title = "number of paragraphs where both Alfred and Howard appear") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "Number of Paragraphs where Both Alfred and Howard Appear") + theme(plot.title = element_text(hjust = 0.5))
 
 pair %>% tail(13) %>% 
   ggplot(aes(x = Chapter, y = Compound)) + 
   geom_line(linewidth = 1.5) + 
   theme_bw(base_size = 24) + 
-  labs(title = "compound scores on paragraphs including both Alfred and Howard") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "Compound Scores on Paragraphs including Both Alfred and Howard", y = "Compound Score") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
@@ -211,7 +211,7 @@ poirot_cnt %>% tail(13) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "number of paragraphs including Poirot and the other", y = "Count") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "Number of Paragraphs including Poirot and the Other", y = "Count", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 poirot_compound <- tibble(read.csv('./poirot/compound.csv'))
@@ -221,7 +221,7 @@ poirot_compound %>% tail(5) %>%
   geom_line(linewidth = 1.5) + 
   scale_color_manual(values = c("Cynthia" = "blue", "Mary" = "green", "Poirot" = "red", "Lawrence" = "black", "Howard" = "orange", "Alfred" = "magenta", "John" = "cyan")) + 
   theme_bw(base_size = 24) + 
-  labs(title = "compound scores on paragraphs including Poirot and the other", y = "Compound Score") + theme(plot.title = element_text(hjust = 0.5))
+  labs(title = "Compound Scores on Paragraphs including Poirot and the Other", y = "Compound Score", colour = "Name") + theme(plot.title = element_text(hjust = 0.5))
 
 
 
